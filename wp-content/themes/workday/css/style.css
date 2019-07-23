@@ -1,0 +1,19 @@
+body {
+  color: black;
+  font-family: "Avenir Next", Arial, sans-serif;
+}
+a {
+  color: #ca4f04;
+}
+a:hover {
+  color: #ca4f04;
+}
+.entry-content a {
+  text-decoration: underline;
+}
+.entry-content a:hover {
+  color: #ca4f04;
+  background-color: #f8f4f2;
+  text-decoration: none;
+}
+/*# sourceMappingURL=css/style.css.map */
