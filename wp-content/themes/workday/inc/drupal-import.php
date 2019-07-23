@@ -52,5 +52,3 @@ function wdmimport_massage_data () {
 
 	endforeach;
 }
-
-
