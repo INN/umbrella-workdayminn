@@ -92,6 +92,7 @@ a:hover {
   border: none;
 }
 #main-nav .nav {
+  width: -moz-fit-content;
   width: fit-content;
   float: none;
   margin: 0 auto;
