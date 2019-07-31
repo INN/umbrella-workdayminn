@@ -1,12 +1,34 @@
 body {
   color: black;
-  font-family: "Avenir Next", Arial, sans-serif;
+  font-family: "classico-urw", "Avenir Next", Arial, sans-serif;
 }
 a {
   color: #ca4f04;
 }
 a:hover {
   color: #ca4f04;
+}
+.navbar,
+.footer-credit,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
+}
+.navbar,
+h5.top-tag,
+h5.byline,
+h3.widgettitle {
+  font-weight: 400;
+}
+h1.entry-title {
+  font-weight: 700;
+}
+blockquote {
+  font-weight: 900;
 }
 .entry-content a {
   text-decoration: underline;
