@@ -1,12 +1,12 @@
 body {
-  color: black;
+  color: #020202;
   font-family: "classico-urw", "Avenir Next", Arial, sans-serif;
 }
 a {
-  color: #ca4f04;
+  color: #CA5004;
 }
 a:hover {
-  color: #ca4f04;
+  color: #CA5004;
 }
 .navbar,
 .footer-credit,
@@ -34,8 +34,8 @@ blockquote {
   text-decoration: underline;
 }
 .entry-content a:hover {
-  color: #ca4f04;
-  background-color: #f8f4f2;
+  color: #CA5004;
+  background-color: #F8F4F2;
   text-decoration: none;
 }
 #site-header {
@@ -47,7 +47,7 @@ blockquote {
   height: 120px;
 }
 #site-header .header-container {
-  background: black;
+  background: #020202;
   margin-left: calc(50% - 50vw);
   width: 100vw;
 }
@@ -99,10 +99,10 @@ blockquote {
   text-align: center;
 }
 #site-header .header-container .header-container-inner .nav-left {
-  border-right: 2px solid #343434;
+  border-right: 2px solid #ADADAD;
 }
 #site-header .header-container .header-container-inner .nav-right {
-  border-left: 2px solid #343434;
+  border-left: 2px solid #ADADAD;
 }
 #main-nav {
   list-style: none;
@@ -125,7 +125,7 @@ blockquote {
   text-transform: uppercase;
 }
 #main-nav .nav li a {
-  color: black;
+  color: #020202;
   font-weight: 600;
 }
 #main-nav .nav li a:hover {

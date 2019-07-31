@@ -10,6 +10,7 @@ define( 'SHOW_GLOBAL_NAV', FALSE );
  */
 $includes = array(
 	'/inc/drupal-import.php',
+	'/inc/block-color-palette.php',
 );
 foreach ( $includes as $include ) {
 	if ( 0 === validate_file( get_stylesheet_directory() . $include ) ) {
