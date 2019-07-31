@@ -1,0 +1,89 @@
+#site-header {
+    margin-top: 0;
+    margin-bottom: 0;
+    .header-container,
+    .header_img {
+        height: 120px;
+    }
+    .header-container {
+        background: @black;
+        margin-left: calc(50% - 50vw);
+        width: 100vw;
+        .header-container-inner {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            max-width: 1170px;
+            height: inherit;
+            margin: 0 auto;
+            .nav-left,
+            .nav-right {
+                flex: 0 0 auto;
+                width: 10%;
+                text-align: center;
+                cursor: pointer;
+                label {
+                    color: @white;
+                    text-transform: uppercase;
+                    margin-bottom: 0;
+                    font-weight: 500;
+                    font-family: @font-body;
+                    &:hover {
+                        text-decoration: none;
+                        cursor: pointer;
+                    }
+                }
+                img {
+                    margin: 10px 0;
+                }
+                a {
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+                @media (max-width: 999px) {
+                    width: 15%;
+                }
+            }
+            .nav-center {
+                flex: 1 1 auto;
+                max-width: 100%;
+                text-align: center;
+            }
+            .nav-left {
+                border-right: 2px solid @gray;
+            }
+            .nav-right {
+                border-left: 2px solid @gray;
+            }
+        }
+    }
+}
+
+#main-nav {
+    list-style: none;
+    margin-left: 0;
+    text-align: center;
+    margin: 15px 0;
+    &.navbar {
+        border: none;
+    }
+    .nav {
+        width: -moz-fit-content;
+        width: fit-content;
+        float: none;
+        margin: 0 auto;
+        li {
+            display: inline;
+            padding: 0 20px;
+            text-transform: uppercase;
+            a {
+                color: @black;
+                font-weight: 600;
+                &:hover {
+                    background: none;
+                }
+            }
+        }
+    }
+}
