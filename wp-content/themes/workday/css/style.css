@@ -20,11 +20,14 @@ a:hover {
   margin-top: 0;
   margin-bottom: 0;
 }
+#site-header .header-container,
+#site-header .header_img {
+  height: 120px;
+}
 #site-header .header-container {
   background: black;
   margin-left: calc(50% - 50vw);
   width: 100vw;
-  height: 120px;
 }
 #site-header .header-container .header-container-inner {
   display: flex;
