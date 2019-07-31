@@ -56,7 +56,8 @@ function largo_header() {
                 ?>
             </div>
             <div class="nav-center">
-                <a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php largo_home_icon( 'icon-white', 'orig' ); ?></a>
+				<!-- add an image placeholder, the src is added by largo_header_js() in inc/enqueue.php -->
+				<a itemprop="url" href="<?php esc_url( home_url( '/' ) ); ?>"><img class="header_img" src="" alt="" /></a>
             </div>
             <div class="nav-right">
                 <a href="/?s">
