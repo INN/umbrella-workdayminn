@@ -38,4 +38,97 @@ blockquote {
   background-color: #f8f4f2;
   text-decoration: none;
 }
+#site-header {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+#site-header .header-container,
+#site-header .header_img {
+  height: 120px;
+}
+#site-header .header-container {
+  background: black;
+  margin-left: calc(50% - 50vw);
+  width: 100vw;
+}
+#site-header .header-container .header-container-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1170px;
+  height: inherit;
+  margin: 0 auto;
+}
+#site-header .header-container .header-container-inner .nav-left,
+#site-header .header-container .header-container-inner .nav-right {
+  flex: 0 0 auto;
+  width: 10%;
+  text-align: center;
+  cursor: pointer;
+}
+#site-header .header-container .header-container-inner .nav-left label,
+#site-header .header-container .header-container-inner .nav-right label {
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-family: "classico-urw", "Avenir Next", Arial, sans-serif;
+}
+#site-header .header-container .header-container-inner .nav-left label:hover,
+#site-header .header-container .header-container-inner .nav-right label:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+#site-header .header-container .header-container-inner .nav-left img,
+#site-header .header-container .header-container-inner .nav-right img {
+  margin: 10px 0;
+}
+#site-header .header-container .header-container-inner .nav-left a:hover,
+#site-header .header-container .header-container-inner .nav-right a:hover {
+  text-decoration: none;
+}
+@media (max-width: 999px) {
+  #site-header .header-container .header-container-inner .nav-left,
+  #site-header .header-container .header-container-inner .nav-right {
+    width: 15%;
+  }
+}
+#site-header .header-container .header-container-inner .nav-center {
+  flex: 1 1 auto;
+  max-width: 100%;
+  text-align: center;
+}
+#site-header .header-container .header-container-inner .nav-left {
+  border-right: 2px solid #343434;
+}
+#site-header .header-container .header-container-inner .nav-right {
+  border-left: 2px solid #343434;
+}
+#main-nav {
+  list-style: none;
+  margin-left: 0;
+  text-align: center;
+  margin: 15px 0;
+}
+#main-nav.navbar {
+  border: none;
+}
+#main-nav .nav {
+  width: -moz-fit-content;
+  width: fit-content;
+  float: none;
+  margin: 0 auto;
+}
+#main-nav .nav li {
+  display: inline;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+#main-nav .nav li a {
+  color: black;
+  font-weight: 600;
+}
+#main-nav .nav li a:hover {
+  background: none;
+}
 /*# sourceMappingURL=css/style.css.map */
