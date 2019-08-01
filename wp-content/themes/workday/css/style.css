@@ -28,7 +28,138 @@ h1.entry-title {
   font-weight: 700;
 }
 blockquote {
-  font-weight: 900;
+  font-weight: 700;
+}
+.wp-block-pullquote.alignwide,
+.wp-block-pullquote.alignfull,
+.wp-block-pullquote.alignleft,
+.wp-block-pullquote.alignright {
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .wp-block-pullquote.alignleft {
+    margin-left: -10%;
+  }
+  .wp-block-pullquote.alignright {
+    margin-right: -10%;
+  }
+}
+.wp-block-pullquote.alignleft,
+.wp-block-pullquote.alignright {
+  max-width: 50%;
+}
+.wp-block-pullquote.alignleft p,
+.wp-block-pullquote.alignright p {
+  font-size: inherit;
+}
+.wp-block-pullquote blockquote,
+.pull-quote,
+blockquote.pull-quote,
+.type-pull-quote,
+blockquote.type-pull-quote {
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
+  font-style: normal;
+  line-height: 1.3;
+  border: none;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 1ch;
+  padding-right: 1ch;
+}
+.wp-block-pullquote blockquote > :first-child,
+.pull-quote > :first-child,
+blockquote.pull-quote > :first-child,
+.type-pull-quote > :first-child,
+blockquote.type-pull-quote > :first-child {
+  margin-top: 0;
+}
+.wp-block-pullquote blockquote > :last-child,
+.pull-quote > :last-child,
+blockquote.pull-quote > :last-child,
+.type-pull-quote > :last-child,
+blockquote.type-pull-quote > :last-child {
+  margin-bottom: 0;
+}
+.wp-block-pullquote blockquote p,
+.pull-quote p,
+blockquote.pull-quote p,
+.type-pull-quote p,
+blockquote.type-pull-quote p {
+  text-transform: uppercase;
+}
+.wp-block-pullquote blockquote p,
+.pull-quote p,
+blockquote.pull-quote p,
+.type-pull-quote p,
+blockquote.type-pull-quote p,
+.wp-block-pullquote blockquote cite,
+.pull-quote cite,
+blockquote.pull-quote cite,
+.type-pull-quote cite,
+blockquote.type-pull-quote cite {
+  font-style: normal;
+  font-size: inherit;
+}
+.wp-block-pullquote blockquote::before,
+.pull-quote::before,
+blockquote.pull-quote::before,
+.type-pull-quote::before,
+blockquote.type-pull-quote::before,
+.wp-block-pullquote blockquote::after,
+.pull-quote::after,
+blockquote.pull-quote::after,
+.type-pull-quote::after,
+blockquote.type-pull-quote::after {
+  display: none;
+}
+.wp-block-pullquote blockquote > :first-child::before,
+.pull-quote > :first-child::before,
+blockquote.pull-quote > :first-child::before,
+.type-pull-quote > :first-child::before,
+blockquote.type-pull-quote > :first-child::before {
+  content: "\201C";
+  display: inline-block;
+  width: 1ch;
+  height: 1ch;
+  margin-left: -1ch;
+  color: #16A327;
+}
+.wp-block-pullquote blockquote > p:last-of-type::after,
+.pull-quote > p:last-of-type::after,
+blockquote.pull-quote > p:last-of-type::after,
+.type-pull-quote > p:last-of-type::after,
+blockquote.type-pull-quote > p:last-of-type::after {
+  content: "\201D";
+  display: inline-block;
+  width: 1ch;
+  height: 1ch;
+  margin-right: -1ch;
+  color: #16A327;
+}
+.wp-block-pullquote {
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+}
+.wp-block-pullquote.is-style-solid-color {
+  border: solid transparent 1px;
+}
+.wp-block-pullquote.is-style-solid-color blockquote {
+  border-top-width: 4px;
+  border-top-style: solid;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  border-color: #020202;
+  max-width: 80%;
+  margin: 2em auto;
+}
+.wp-block-pullquote.is-style-solid-color blockquote > :first-child::before,
+.wp-block-pullquote.is-style-solid-color blockquote > p:last-of-type::after {
+  color: #CA5004;
+}
+.wp-block-pullquote.is-style-solid-color blockquote p {
+  font-size: inherit;
 }
 .entry-content a {
   text-decoration: underline;
