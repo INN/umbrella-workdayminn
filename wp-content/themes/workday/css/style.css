@@ -36,7 +36,7 @@ blockquote {
 .wp-block-pullquote.alignright {
   text-align: left;
 }
-@media (max-width: 768px) {
+@media (min-width: 769px) {
   .wp-block-pullquote.alignleft {
     margin-left: -10%;
   }
