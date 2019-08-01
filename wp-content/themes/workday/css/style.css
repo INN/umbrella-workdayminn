@@ -262,4 +262,55 @@ blockquote.type-pull-quote > p:last-of-type::after {
 #main-nav .nav li a:hover {
   background: none;
 }
+.footer-bg {
+  background: #020202;
+}
+.footer-bg #site-footer #boilerplate {
+  padding-top: 50px;
+  padding-bottom: 15px;
+  border-top: 2px solid #ADADAD;
+  font-family: "classico-urw", "Avenir Next", Arial, sans-serif;
+}
+.footer-bg #site-footer #boilerplate .row-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  .footer-bg #site-footer #boilerplate .row-fluid .span6 {
+    text-align: left;
+  }
+  .footer-bg #site-footer #boilerplate .row-fluid .span6.right {
+    text-align: right;
+  }
+}
+.footer-bg #site-footer #boilerplate .row-fluid .footer-bottom .footer-credit {
+  font-weight: 500;
+}
+.footer-bg #site-footer #boilerplate .row-fluid #footer-social {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer-bg #site-footer #boilerplate .row-fluid #footer-social li {
+  display: inline-block;
+  height: auto;
+  border-left: 2px solid #ADADAD;
+  padding: 5px 0;
+}
+.footer-bg #site-footer #boilerplate .row-fluid #footer-social li:last-of-type {
+  border-right: 2px solid #ADADAD;
+}
+.footer-bg #site-footer #boilerplate .row-fluid #footer-social li a {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer-bg #site-footer #boilerplate .row-fluid #footer-social li a i {
+  color: #71E26C;
+  font-size: 16px;
+}
+@media (max-width: 768px) {
+  .footer-bg #site-footer #boilerplate .row-fluid {
+    display: block;
+  }
+}
 /*# sourceMappingURL=css/style.css.map */
