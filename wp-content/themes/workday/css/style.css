@@ -16,6 +16,104 @@ a:hover {
   background-color: #f8f4f2;
   text-decoration: none;
 }
+.photo-header-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 675px;
+  height: max-content;
+  margin-left: calc(50% - 50vw) !important;
+  max-width: 100vw;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0!important;
+}
+.photo-header-background .featured-image-bg-layer {
+  background-color: rgba(0, 0, 0, 0.62);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.photo-header-background .featured-image-container-content {
+  z-index: 1;
+}
+.photo-header-background .featured-image-container-content h5.top-tag {
+  position: relative!important;
+  text-align: center;
+  margin-bottom: 0;
+}
+.photo-header-background .featured-image-container-content h5.top-tag a {
+  color: #7BE2B6;
+  font-family: "PT Sans Narrow Bold", "Oswald", sans-serif;
+}
+.photo-header-background .featured-image-container-content h5.top-tag a:hover {
+  text-decoration: none;
+}
+.photo-header-background .featured-image-container-content .entry-title {
+  color: white;
+  font-family: "PT Sans Narrow Bold", "Oswald", sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 1.2;
+  text-align: center;
+  max-width: 90%;
+  margin: 0 auto 30px;
+}
+@media (min-width: 786px) {
+  .photo-header-background .featured-image-container-content .entry-title {
+    max-width: 70%;
+  }
+}
+.photo-header-background .featured-image-container-content .byline {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-family: "PT Sans Narrow Bold", "Oswald", sans-serif;
+}
+.photo-header-background .featured-image-container-content .byline .by-author {
+  text-transform: uppercase;
+}
+.photo-header-background .featured-image-container-content .byline .by-author .author {
+  font-weight: inherit;
+}
+.photo-header-background .featured-image-container-content .byline .by-author .author a {
+  color: white;
+}
+.photo-header-background .featured-image-container-content .byline .by-author .author a:hover {
+  color: white;
+  text-decoration: none;
+}
+.photo-header-background .featured-image-container-content .byline .edit-link {
+  display: block;
+}
+.photo-header-background .featured-image-container-content .byline .edit-link a {
+  color: white;
+}
+.photo-header-background .featured-image-container-content .photo-header-social-links {
+  text-align: center;
+  list-style: none;
+  margin-top: 40px;
+}
+.photo-header-background .featured-image-container-content .photo-header-social-links li {
+  display: inline-block;
+  margin: 0 15px;
+}
+.photo-header-background .featured-image-container-content .photo-header-social-links li i {
+  color: white;
+  background: #ca4f04;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 10px;
+  vertical-align: middle;
+  font-size: 14px;
+  padding: 10px;
+}
+.photo-header-background .featured-image-container-content .photo-header-social-links li i:before {
+  margin: 0 0.2em;
+}
 #site-header {
   margin-top: 0;
   margin-bottom: 0;

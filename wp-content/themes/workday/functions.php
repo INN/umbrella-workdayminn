@@ -9,7 +9,8 @@ define( 'SHOW_GLOBAL_NAV', FALSE );
  * Include files that should be included
  */
 $includes = array(
-	'/inc/drupal-import.php',
+    '/inc/drupal-import.php',
+    '/inc/photo-header-template.php',
 );
 foreach ( $includes as $include ) {
 	if ( 0 === validate_file( get_stylesheet_directory() . $include ) ) {
