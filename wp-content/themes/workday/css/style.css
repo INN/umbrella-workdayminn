@@ -37,12 +37,20 @@ blockquote {
 .wp-block-pullquote.alignright {
   text-align: left;
 }
-@media (min-width: 769px) {
+@media (min-width: 769px) and (max-width: 979px) {
   .wp-block-pullquote.alignleft {
-    margin-left: -10%;
+    margin-left: calc((100vw - 36px) * 0.06382979 * -1);
   }
   .wp-block-pullquote.alignright {
-    margin-right: -10%;
+    margin-right: calc((100vw - 36px) * 0.06382979 * -1);
+  }
+}
+@media (min-width: 980px) {
+  .wp-block-pullquote.alignleft {
+    margin-left: calc(-0.5 * (95vw * 0.17021276594) );
+  }
+  .wp-block-pullquote.alignright {
+    margin-right: calc(-0.5 * (95vw * 0.17021276594) );
   }
 }
 .wp-block-pullquote.alignleft,
