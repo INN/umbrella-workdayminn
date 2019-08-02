@@ -12,6 +12,7 @@ $includes = array(
 	'/inc/drupal-import.php',
 	'/homepages/layout.php',
 	'/inc/block-color-palette.php',
+    '/inc/photo-header-template.php',
 );
 foreach ( $includes as $include ) {
 	if ( 0 === validate_file( get_stylesheet_directory() . $include ) ) {
