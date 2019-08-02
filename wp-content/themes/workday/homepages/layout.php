@@ -22,11 +22,22 @@ class WorkdayMinnesota extends Homepage {
 					filemtime( get_stylesheet_directory() . '/homepages/assets/css/homepage.css' ),
 				),
 			),
+			'prominenceTerms' => array(
+				array(
+					'name' => __('Homepage Featured', 'largo'),
+					'description' => __('If you are using the Newspaper or Carousel optional homepage layout, add this label to posts to display them in the featured area on the homepage.', 'largo'),
+					'slug' => 'homepage-featured'
+				),
+				array(
+					'name' => __('Homepage Top Story', 'largo'),
+					'description' => __('If you are using a "Big story" homepage layout, add this label to a post to make it the top story on the homepage', 'largo'),
+					'slug' => 'top-story'
+				),
+			),
 		);
 		$options = array_merge( $defaults, $options );
 		$this->load( $options );
 	}
-
 }
 
 /**
