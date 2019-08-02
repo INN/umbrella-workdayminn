@@ -58,3 +58,13 @@ if ( $excerpt == 'num_sentences' ) {
 		<p><?php echo get_the_excerpt(); ?></p>
 	<?php
 }
+
+// If it's a media post, add a link to the post that highlights it's a media post
+if ( has_term( 'media', 'category' ) ) {
+	printf(
+		'<p class="mediaplay"><a href="%1$s">%2$s <span>%3$s</span></a></p>',
+		get_permalink(),
+		'<span class="encircle">►</span>',
+		__( 'More', 'workday' )
+	);
+}

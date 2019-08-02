@@ -366,6 +366,87 @@ blockquote.type-pull-quote > p:last-of-type::after {
 .photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social .hidden-phone {
   display: none;
 }
+.largo-recent-posts {
+  padding-bottom: 1.5rem;
+}
+.largo-recent-posts > ul {
+  margin: 0;
+}
+.largo-recent-posts > ul li :last-child {
+  margin-bottom: 0;
+}
+.largo-recent-posts img.attachment-large {
+  margin-bottom: 1.5rem;
+  padding: 0;
+}
+.largo-recent-posts h5,
+.largo-recent-posts p {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.largo-recent-posts h5 a {
+  color: #020202;
+}
+.largo-recent-posts .top-tag a {
+  color: #CA5004;
+  font-weight: 400;
+}
+.largo-recent-posts .top-tag a:hover {
+  color: #CA5004;
+}
+.largo-recent-posts .mediaplay {
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
+  color: #020202;
+  text-transform: uppercase;
+  vertical-align: middle;
+  line-height: 1.75em;
+}
+.largo-recent-posts .mediaplay a {
+  display: table-cell;
+  vertical-align: middle;
+}
+.largo-recent-posts .encircle {
+  display: inline-block;
+  vertical-align: middle;
+  height: 1.75em;
+  width: 1.75em;
+  line-height: calc(1.75em - 2px);
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #CA5004;
+  color: #CA5004;
+  margin-right: 0.5em;
+}
+.largo-recent-posts .encircle * {
+  box-sizing: border-box;
+}
+.largo-recent-posts .encircle:hover {
+  background-color: white;
+  color: #020202;
+}
+.largo-recent-posts p.morelink {
+  width: calc(100% - 1.5rem - 1.5rem);
+  margin: 0 auto;
+  line-height: 2.5em;
+  text-align: center;
+  border: 1px solid #CA5004;
+  text-transform: uppercase;
+  color: #020202;
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
+  box-sizing: border-box;
+}
+.largo-recent-posts p.morelink a {
+  color: #020202;
+}
+.largo-recent-posts p.morelink:hover {
+  border-color: #020202;
+  background-color: white;
+}
+.largo-recent-posts p.morelink:hover a {
+  color: #020202;
+  text-decoration: none;
+}
 #site-header {
   margin-top: 0;
   margin-bottom: 0;

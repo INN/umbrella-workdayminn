@@ -41,7 +41,7 @@
 			}
 		?>
 	</div>
-	<div class="span4">
+	<div id="homepage-sidebar" class="span4">
 		<?php
 			dynamic_sidebar( 'Homepage Sidebar' );
 		?>

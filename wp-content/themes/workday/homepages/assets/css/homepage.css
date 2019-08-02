@@ -1,4 +1,10 @@
 #featured {
   margin-top: 4em;
 }
+#homepage-sidebar .widget {
+  background-color: #F8F4F2;
+}
+#homepage-sidebar .widgettitle {
+  text-align: center;
+}
 /*# sourceMappingURL=homepages/assets/css/homepage.css.map */

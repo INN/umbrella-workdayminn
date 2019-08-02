@@ -1,0 +1,91 @@
+.largo-recent-posts {
+  @whitespace: 1.5rem;
+  > ul {
+    margin: 0;
+    li {
+      :last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  img.attachment-large {
+    margin-bottom: @whitespace;
+    padding: 0;
+  }
+  h5, p {
+    padding-left: @whitespace;
+    padding-right: @whitespace;
+  }
+  h5 {
+    a {
+      color: @black;
+    }
+  }
+  .top-tag a {
+    color: @orange;
+    font-weight: 400;
+    &:hover {
+      color: @orange;
+    }
+  }
+
+  // Stuff for the "more" button
+  @circlesize: 1.75em;
+  .mediaplay {
+    font-family: @font-headline;
+    color: @black;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: @circlesize;
+    a {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+  .encircle {
+    box-sizing: border-box;
+    * {
+      box-sizing: border-box;
+    }
+    display: inline-block;
+    vertical-align: middle;
+    height: @circlesize;
+    width: @circlesize;
+    line-height: calc( @circlesize - 2px );
+    box-sizing: border-box;
+    text-align: center;
+    border-radius: 50%;
+    border: 1px solid @orange;
+    color: @orange;
+    &:hover {
+      background-color: @white;
+      color: @black;
+    }
+    margin-right: 0.5em;
+  }
+
+  p.morelink {
+    width: calc( 100% - @whitespace - @whitespace );
+    margin: 0 auto;
+    line-height: 2.5em;
+    text-align: center;
+    border: 1px solid @orange;
+    text-transform: uppercase;
+    color: @black;
+    a {
+      color: @black;
+    }
+    font-family: @font-headline;
+    box-sizing: border-box;
+    &:hover {
+      border-color: @black;
+      background-color: @white;
+      a {
+        color: @black;
+        text-decoration: none;
+      }
+    }
+  }
+
+  padding-bottom: @whitespace;
+}
