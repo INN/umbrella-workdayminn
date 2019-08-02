@@ -1,0 +1,1 @@
+{"version":3,"sources":["homepages/assets/less/homepage.less"],"names":[],"mappings":"AAEA;EACE,eAAA","sourcesContent":["@import (reference) '../../../less/vars.less';\n\n#featured {\n  margin-top: 4em;\n}\n"]}
