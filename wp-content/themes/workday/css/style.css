@@ -277,7 +277,7 @@ blockquote.type-pull-quote > p:last-of-type::after {
 .photo-header-background .featured-image-container-content .byline {
   color: white;
   text-align: center;
-  font-size: 18px;
+  font-size: 20px;
   font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
   max-width: 90%;
   margin: 0 auto;
