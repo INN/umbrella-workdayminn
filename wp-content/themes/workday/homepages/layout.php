@@ -5,10 +5,6 @@ class WorkdayMinnesota extends Homepage {
 	var $name = 'Workday Minnesota';
 	var $type = 'workday';
 	var $description = 'The homepage for Workday Minnesota.';
-	var $sidebars = array(
-		'Homepage Sidebar',
-		'Homepage Bottom',
-	);
 	var $rightRail = false;
 
 	public function __construct( $options = array() ) {
@@ -34,10 +30,23 @@ class WorkdayMinnesota extends Homepage {
 					'slug' => 'top-story'
 				),
 			),
+			'sidebars' => array(
+				__( 'Homepage Sidebar (Appears near the secondary featured post on the homepage)', 'workday' ),
+				__( 'Homepage Bottom (The bottom area of the homepage)', 'workday'),
+			),
 		);
 		$options = array_merge( $defaults, $options );
 		$this->load( $options );
 	}
+
+	/**
+	 * Register our sidebars
+	 */
+	public function register_sidebars() {
+		$sidebars = array(
+		);
+	}
+
 }
 
 /**
