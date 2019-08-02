@@ -1,6 +1,22 @@
 #featured {
   margin-top: 4em;
 }
+#substory article {
+  margin-bottom: 1.5rem;
+}
+#substory article img {
+  margin-bottom: 1.5rem;
+}
+#substory article .top-tag,
+#substory article .top-tag a {
+  color: #CA5004;
+}
+#substory article h2 {
+  margin-bottom: 0.5em;
+}
+#substory article h2 a {
+  color: #020202;
+}
 #homepage-sidebar .widget {
   background-color: #F8F4F2;
 }
