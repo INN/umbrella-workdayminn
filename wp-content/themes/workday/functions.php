@@ -10,6 +10,7 @@ define( 'SHOW_GLOBAL_NAV', FALSE );
  */
 $includes = array(
 	'/inc/drupal-import.php',
+	'/homepages/layout.php',
 	'/inc/block-color-palette.php',
     '/inc/photo-header-template.php',
 );

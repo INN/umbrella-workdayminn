@@ -9,7 +9,8 @@ module.exports = function(grunt) {
     path = path.replace(/^[\s\S]+\/wp-content/, "\/wp-content");
 
     var CSS_LESS_FILES = {
-        'css/style.css': 'less/style.less'
+        'css/style.css': 'less/style.less',
+        'homepages/assets/css/homepage.css': 'homepages/assets/less/homepage.less'
     };
 
     grunt.initConfig({
@@ -18,7 +19,9 @@ module.exports = function(grunt) {
         less: {
             development: {
                 options: {
-                    paths: ['less'],
+                    paths: [
+                        'less'
+                    ],
                     sourceMap: true,
                     outputSourceFiles: true,
                     sourceMapBasepath: path,
@@ -39,6 +42,13 @@ module.exports = function(grunt) {
                         src: ['*.css', '!*.min.css'],
                         dest: 'css',
                         ext: '.min.css'
+                    },
+                    {
+                        expand: true,
+                        cwd: 'homepage/assets/css',
+                        src: ['*.css', '!*.min.css'],
+                        dest: 'homepage/assets/css',
+                        ext: '.min.css'
                     }
                 ]
             }
@@ -48,6 +58,7 @@ module.exports = function(grunt) {
             less: {
                 files: [
                     'less/**/*.less',
+                    'homepages/assets/less/**/*.less'
                 ],
                 tasks: [
                     'less:development',
