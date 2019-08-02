@@ -10,7 +10,7 @@ module.exports = function(grunt) {
 
     var CSS_LESS_FILES = {
         'css/style.css': 'less/style.less',
-        'homepage/assets/css/homepage.css': 'homepage/assets/less/homepage.less'
+        'homepages/assets/css/homepage.css': 'homepages/assets/less/homepage.less'
     };
 
     grunt.initConfig({
@@ -20,8 +20,7 @@ module.exports = function(grunt) {
             development: {
                 options: {
                     paths: [
-                        'less',
-                        'homepage/assets/less'
+                        'less'
                     ],
                     sourceMap: true,
                     outputSourceFiles: true,
@@ -59,7 +58,7 @@ module.exports = function(grunt) {
             less: {
                 files: [
                     'less/**/*.less',
-                    'homepages/**/*.less'
+                    'homepages/assets/less/**/*.less'
                 ],
                 tasks: [
                     'less:development',
