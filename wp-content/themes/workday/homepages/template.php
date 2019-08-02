@@ -18,7 +18,7 @@
 	?>
 </div>
 
-<div id="featured" class="row">
+<div id="featured" class="row clearfix">
 	<div class="span8">
 		<?php
 			$substories = largo_home_featured_stories( 1 );
@@ -37,7 +37,13 @@
 		?>
 	</div>
 	<div class="span4">
+		<?php
+			dynamic_sidebar( 'Homepage Sidebar' );
+		?>
 	</div>
 </div>
-<div id="widget-area" class="">
+<div id="widget-area" class="clearfix">
+	<?php
+		dynamic_sidebar( 'Homepage Bottom' );
+	?>
 </div>

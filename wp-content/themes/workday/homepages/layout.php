@@ -31,8 +31,8 @@ class WorkdayMinnesota extends Homepage {
 				),
 			),
 			'sidebars' => array(
-				__( 'Homepage Sidebar (Appears near the secondary featured post on the homepage)', 'workday' ),
-				__( 'Homepage Bottom (The bottom area of the homepage)', 'workday'),
+				'Homepage Sidebar (Appears near the secondary featured post on the homepage)',
+				'Homepage Bottom (The bottom area of the homepage)',
 			),
 		);
 		$options = array_merge( $defaults, $options );
