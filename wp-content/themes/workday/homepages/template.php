@@ -8,7 +8,8 @@
 		$shown_ids[] = $topstory->ID;
 		?>
 			<article <?php post_class( 'clearfix', $topstory ); ?>>
-				<h2><a href="<?php esc_attr( get_the_permalink( $topstory ) ); ?>">
+				<?php largo_maybe_top_term( array( 'post' => $topstory->ID ) ); ?>
+				<h2><a href="<?php echo esc_attr( get_permalink( $topstory ) ); ?>">
 					<?php echo get_the_title( $topstory ); ?>
 				</a></h2>
 				<h5 class="byline"><?php largo_byline( true, false, $topstory ); ?></h5>
@@ -26,7 +27,11 @@
 				$shown_ids[] = $substory->ID;
 				?>
 					<article <?php post_class( 'clearfix', $substory ); ?>>
-						<h2><a href="<?php esc_attr( get_the_permalink( $substory ) ); ?>">
+						<a href="<?php echo esc_attr( get_permalink( $substory ) ); ?>">
+							<?php echo get_the_post_thumbnail( $substory, 'large' ); ?>
+						</a>
+						<?php largo_maybe_top_term( array( 'post' => $substory->ID ) ); ?>
+						<h2><a href="<?php echo esc_attr( get_permalink( $substory ) ); ?>">
 							<?php echo get_the_title( $substory ); ?>
 						</a></h2>
 						<h5 class="byline"><?php largo_byline( true, false, $substory ); ?></h5>
