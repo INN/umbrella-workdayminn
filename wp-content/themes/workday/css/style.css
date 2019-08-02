@@ -199,7 +199,7 @@ blockquote.type-pull-quote > p:last-of-type::after {
 @media (max-width: 768px) {
   .photo-header-background {
     display: block;
-    background: black;
+    background: #020202;
     background-image: none!important;
     min-height: auto;
   }
@@ -248,14 +248,14 @@ blockquote.type-pull-quote > p:last-of-type::after {
 }
 .photo-header-background .featured-image-container-content h5.top-tag a {
   color: #7BE2B6;
-  font-family: "PT Sans Narrow Bold", "Oswald", sans-serif;
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
 }
 .photo-header-background .featured-image-container-content h5.top-tag a:hover {
   text-decoration: none;
 }
 .photo-header-background .featured-image-container-content .entry-title {
   color: white;
-  font-family: "PT Sans Narrow Bold", "Oswald", sans-serif;
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
   font-weight: 600;
   font-size: 44px;
   line-height: 1.2;
@@ -278,7 +278,7 @@ blockquote.type-pull-quote > p:last-of-type::after {
   color: white;
   text-align: center;
   font-size: 18px;
-  font-family: "PT Sans Narrow Bold", "Oswald", sans-serif;
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
   max-width: 90%;
   margin: 0 auto;
 }
@@ -340,7 +340,7 @@ blockquote.type-pull-quote > p:last-of-type::after {
 }
 .photo-header-background .featured-image-container-content .photo-header-social-links li i {
   color: white;
-  background: #ca4f04;
+  background: #CA5004;
   border-radius: 50%;
   text-align: center;
   line-height: 10px;
