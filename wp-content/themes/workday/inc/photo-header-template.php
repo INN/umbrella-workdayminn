@@ -23,9 +23,9 @@ function workday_photo_header_tag( $post = null ) {
 		// - there's no reason to use half those image sizes
 		$sizes = array(
 			// registered image size name => width in pixels
-			'medium' => '336', // too small
-			'large' => '771',  // still too small
-			'two-third-full' => '780', // still too small
+			// 'medium' => '336', // too small
+			// 'large' => '771',  // still too small
+			// 'two-third-full' => '780', // still too small
 			'rect_thumb' => '800', // this is 800x400 exact, we may not want to keep it
 			'full' => '1170',  
 		);
@@ -69,12 +69,12 @@ EOF;
 
 		echo '</style>';
 
-		//echo '<script>var big_image = "' . wp_get_attachment_url( $post ) . '";</script>';
 	}
 
 	printf(
 		'<header id="%1$s" class="%2$s">',
 		$element_id,
-		"photo-header-background"
-	);
+        $post ? "photo-header-background" : "photo-header-background no-photo"
+    );
+
 }

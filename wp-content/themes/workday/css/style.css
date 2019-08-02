@@ -29,6 +29,19 @@ a:hover {
   background-size: cover;
   margin-top: 0!important;
 }
+@media (max-width: 768px) {
+  .photo-header-background.no-photo .featured-image-container-content {
+    padding: 40px 0;
+  }
+}
+@media (max-width: 768px) {
+  .photo-header-background {
+    display: block;
+    background: black;
+    background-image: none!important;
+    min-height: auto;
+  }
+}
 .photo-header-background .featured-image-bg-layer {
   background-color: rgba(0, 0, 0, 0.62);
   position: absolute;
@@ -37,13 +50,39 @@ a:hover {
   width: 100%;
   height: 100%;
 }
+@media (max-width: 768px) {
+  .photo-header-background .featured-image-bg-layer {
+    display: none;
+  }
+}
 .photo-header-background .featured-image-container-content {
   z-index: 1;
+  max-width: inherit;
+}
+@media (max-width: 768px) {
+  .photo-header-background .featured-image-container-content {
+    padding-bottom: 40px;
+  }
+}
+.photo-header-background .featured-image-container-content .featured-image-container-mobile-image {
+  margin-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .photo-header-background .featured-image-container-content .featured-image-container-mobile-image {
+    display: none;
+  }
 }
 .photo-header-background .featured-image-container-content h5.top-tag {
   position: relative!important;
   text-align: center;
   margin-bottom: 0;
+  width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .photo-header-background .featured-image-container-content h5.top-tag {
+    text-align: left;
+  }
 }
 .photo-header-background .featured-image-container-content h5.top-tag a {
   color: #7BE2B6;
@@ -56,7 +95,7 @@ a:hover {
   color: white;
   font-family: "PT Sans Narrow Bold", "Oswald", sans-serif;
   font-weight: 600;
-  font-size: 56px;
+  font-size: 44px;
   line-height: 1.2;
   text-align: center;
   max-width: 90%;
@@ -65,6 +104,12 @@ a:hover {
 @media (min-width: 786px) {
   .photo-header-background .featured-image-container-content .entry-title {
     max-width: 70%;
+    font-size: 56px;
+  }
+}
+@media (max-width: 768px) {
+  .photo-header-background .featured-image-container-content .entry-title {
+    text-align: left;
   }
 }
 .photo-header-background .featured-image-container-content .byline {
@@ -72,6 +117,13 @@ a:hover {
   text-align: center;
   font-size: 18px;
   font-family: "PT Sans Narrow Bold", "Oswald", sans-serif;
+  max-width: 90%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .photo-header-background .featured-image-container-content .byline {
+    text-align: left;
+  }
 }
 .photo-header-background .featured-image-container-content .byline .by-author {
   text-transform: uppercase;
@@ -92,14 +144,37 @@ a:hover {
 .photo-header-background .featured-image-container-content .byline .edit-link a {
   color: white;
 }
+@media (max-width: 768px) {
+  .photo-header-background .featured-image-container-content .byline .edit-link {
+    padding-left: 0!important;
+  }
+}
 .photo-header-background .featured-image-container-content .photo-header-social-links {
   text-align: center;
   list-style: none;
   margin-top: 40px;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+@media (max-width: 768px) {
+  .photo-header-background .featured-image-container-content .photo-header-social-links {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left;
+    max-width: 90%;
+  }
 }
 .photo-header-background .featured-image-container-content .photo-header-social-links li {
   display: inline-block;
   margin: 0 15px;
+}
+@media (max-width: 768px) {
+  .photo-header-background .featured-image-container-content .photo-header-social-links li {
+    margin: 0 10px;
+  }
+  .photo-header-background .featured-image-container-content .photo-header-social-links li:first-of-type {
+    margin-left: 0;
+  }
 }
 .photo-header-background .featured-image-container-content .photo-header-social-links li i {
   color: white;
@@ -110,6 +185,11 @@ a:hover {
   vertical-align: middle;
   font-size: 14px;
   padding: 10px;
+}
+@media (max-width: 768px) {
+  .photo-header-background .featured-image-container-content .photo-header-social-links li i {
+    font-size: 12px;
+  }
 }
 .photo-header-background .featured-image-container-content .photo-header-social-links li i:before {
   margin: 0 0.2em;
