@@ -34,7 +34,7 @@
 
             <?php if ( ! of_get_option( 'single_social_icons' ) == false ) { ?>
                 <ul class="photo-header-social-links">
-                    <?php largo_social_links(); ?>
+                    <?php largo_post_social_links(); ?>
                 </ul>
             <?php } ?>
         </div>

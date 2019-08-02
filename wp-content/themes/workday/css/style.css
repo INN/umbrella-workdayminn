@@ -326,19 +326,22 @@ blockquote.type-pull-quote > p:last-of-type::after {
     max-width: 90%;
   }
 }
-.photo-header-background .featured-image-container-content .photo-header-social-links li {
-  display: inline-block;
+.photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social span {
+  background: none!important;
   margin: 0 15px;
 }
 @media (max-width: 768px) {
-  .photo-header-background .featured-image-container-content .photo-header-social-links li {
+  .photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social span {
     margin: 0 10px;
   }
-  .photo-header-background .featured-image-container-content .photo-header-social-links li:first-of-type {
+  .photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social span:first-of-type {
     margin-left: 0;
   }
 }
-.photo-header-background .featured-image-container-content .photo-header-social-links li i {
+.photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social span a {
+  padding: 0;
+}
+.photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social span a i {
   color: white;
   background: #CA5004;
   border-radius: 50%;
@@ -349,12 +352,19 @@ blockquote.type-pull-quote > p:last-of-type::after {
   padding: 10px;
 }
 @media (max-width: 768px) {
-  .photo-header-background .featured-image-container-content .photo-header-social-links li i {
+  .photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social span a i {
     font-size: 12px;
   }
 }
-.photo-header-background .featured-image-container-content .photo-header-social-links li i:before {
+.photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social span a i:before {
   margin: 0 0.2em;
+}
+.photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social span a i.icon-mail:before {
+  display: inline;
+}
+.photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social .more-social-links,
+.photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social .hidden-phone {
+  display: none;
 }
 #site-header {
   margin-top: 0;
