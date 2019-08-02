@@ -23,4 +23,12 @@
 #homepage-sidebar .widgettitle {
   text-align: center;
 }
+@media (max-width: 700px) {
+  #featured .span8,
+  #featured .span4 {
+    clear: both;
+    width: 100%;
+    margin: 0;
+  }
+}
 /*# sourceMappingURL=homepages/assets/css/homepage.css.map */
