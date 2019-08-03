@@ -88,3 +88,56 @@
 
   padding-bottom: @whitespace;
 }
+
+// these styles are on the assumption that it's being used in a widget that's the full width of the page.
+.widget.saved-links {
+  .post-lead:first-of-type {
+    clear: left;
+  }
+  div.post-lead {
+    max-width: 25%;
+    width: 25%;
+    box-sizing: border-box;
+
+    padding-left: @whitespace;
+    padding-right: @whitespace;
+
+    // override .clearfix
+    float: left;
+    clear: none;
+    &::before, &::after {
+      display: none;
+    }
+
+    & + .post-lead {
+      border-left: 1px solid @gray;
+    }
+
+    img.wp-post-image {
+      margin: 0 auto @whitespace;
+      display: block;
+      float: none;
+    }
+    h5 a {
+      color: @black;
+    }
+    h5 {
+      margin-bottom: @whitespace;
+    }
+    .source {
+      font-family: @font-headline;
+    }
+    .source-label {
+      display: none;
+    }
+
+    @media (max-width: 700px) {
+      width: 50%;
+      max-width: 50%;
+      &:nth-of-type( 2n + 1 ) {
+        clear: left;
+        border-left: none;
+      }
+    }
+  }
+}
