@@ -170,6 +170,18 @@ blockquote.type-pull-quote > p:last-of-type::after {
 .wp-block-pullquote.is-style-solid-color blockquote p {
   font-size: inherit;
 }
+.widget h5.top-tag,
+h5.top-tag {
+  color: #CA5004;
+}
+.widget h5.top-tag a,
+h5.top-tag a {
+  color: #CA5004;
+}
+.widget h5.top-tag a:hover,
+h5.top-tag a:hover {
+  color: #CA5004;
+}
 .entry-content a {
   text-decoration: underline;
 }
@@ -384,15 +396,11 @@ blockquote.type-pull-quote > p:last-of-type::after {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+.largo-recent-posts h5.top-tag {
+  margin-top: 1.5rem;
+}
 .largo-recent-posts h5 a {
   color: #020202;
-}
-.largo-recent-posts .top-tag a {
-  color: #CA5004;
-  font-weight: 400;
-}
-.largo-recent-posts .top-tag a:hover {
-  color: #CA5004;
 }
 .largo-recent-posts .mediaplay {
   font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
@@ -404,8 +412,15 @@ blockquote.type-pull-quote > p:last-of-type::after {
 .largo-recent-posts .mediaplay a {
   display: table-cell;
   vertical-align: middle;
+  color: #020202;
+}
+.largo-recent-posts .mediaplay:hover .encircle {
+  border-color: #020202;
+  background-color: white;
+  color: #020202;
 }
 .largo-recent-posts .encircle {
+  padding-left: 0.2em;
   display: inline-block;
   vertical-align: middle;
   height: 1.75em;
@@ -420,10 +435,6 @@ blockquote.type-pull-quote > p:last-of-type::after {
 }
 .largo-recent-posts .encircle * {
   box-sizing: border-box;
-}
-.largo-recent-posts .encircle:hover {
-  background-color: white;
-  color: #020202;
 }
 .largo-recent-posts p.morelink {
   width: calc(100% - 1.5rem - 1.5rem);
