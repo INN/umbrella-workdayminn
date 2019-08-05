@@ -81,3 +81,17 @@ function largo_header() {
 	<?php
 	
 }
+
+function register_workday_widgets(){
+
+    $register = array(
+        'workday_related_posts_widget' => '/inc/widgets/workday-related-posts.php',
+    );
+
+	foreach ( $register as $key => $val ) {
+		require_once( get_stylesheet_directory() . $val );
+		register_widget( $key );
+	}
+
+}
+add_action( 'widgets_init', 'register_workday_widgets', 1 );
