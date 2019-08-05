@@ -20,7 +20,7 @@
 </div>
 
 <div id="featured" class="row clearfix">
-	<div class="span8">
+	<div id="substory" class="span8">
 		<?php
 			$substories = largo_home_featured_stories( 1 );
 			foreach ( $substories as $substory ) {
@@ -34,14 +34,13 @@
 						<h2><a href="<?php echo esc_attr( get_permalink( $substory ) ); ?>">
 							<?php echo get_the_title( $substory ); ?>
 						</a></h2>
-						<h5 class="byline"><?php largo_byline( true, false, $substory ); ?></h5>
 						<?php largo_excerpt( $substory, 4, false ); ?>
 					</article>
 				<?php
 			}
 		?>
 	</div>
-	<div class="span4">
+	<div id="homepage-sidebar" class="span4">
 		<?php
 			dynamic_sidebar( 'Homepage Sidebar' );
 		?>
