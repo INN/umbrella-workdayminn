@@ -486,7 +486,7 @@ h5.top-tag a:hover {
   color: #020202;
 }
 .widget.saved-links div.post-lead h5 {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0.75rem;
 }
 .widget.saved-links div.post-lead .source {
   font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
