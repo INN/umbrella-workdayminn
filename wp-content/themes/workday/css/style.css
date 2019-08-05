@@ -170,6 +170,18 @@ blockquote.type-pull-quote > p:last-of-type::after {
 .wp-block-pullquote.is-style-solid-color blockquote p {
   font-size: inherit;
 }
+.widget h5.top-tag,
+h5.top-tag {
+  color: #CA5004;
+}
+.widget h5.top-tag a,
+h5.top-tag a {
+  color: #CA5004;
+}
+.widget h5.top-tag a:hover,
+h5.top-tag a:hover {
+  color: #CA5004;
+}
 .entry-content a {
   text-decoration: underline;
 }
@@ -386,13 +398,6 @@ blockquote.type-pull-quote > p:last-of-type::after {
 }
 .largo-recent-posts h5 a {
   color: #020202;
-}
-.largo-recent-posts .top-tag a {
-  color: #CA5004;
-  font-weight: 400;
-}
-.largo-recent-posts .top-tag a:hover {
-  color: #CA5004;
 }
 .largo-recent-posts .mediaplay {
   font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
