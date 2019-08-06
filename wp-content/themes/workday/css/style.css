@@ -458,6 +458,52 @@ h5.top-tag a:hover {
   color: #020202;
   text-decoration: none;
 }
+.widget.saved-links .post-lead:first-of-type {
+  clear: left;
+}
+.widget.saved-links div.post-lead {
+  max-width: 25%;
+  width: 25%;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  float: left;
+  clear: none;
+}
+.widget.saved-links div.post-lead::before,
+.widget.saved-links div.post-lead::after {
+  display: none;
+}
+.widget.saved-links div.post-lead + .post-lead {
+  border-left: 1px solid #ADADAD;
+}
+.widget.saved-links div.post-lead img.wp-post-image {
+  margin: 0 auto 1.5rem;
+  display: block;
+  float: none;
+}
+.widget.saved-links div.post-lead h5 a {
+  color: #020202;
+}
+.widget.saved-links div.post-lead h5 {
+  margin-bottom: 0.75rem;
+}
+.widget.saved-links div.post-lead .source {
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
+}
+.widget.saved-links div.post-lead .source-label {
+  display: none;
+}
+@media (max-width: 700px) {
+  .widget.saved-links div.post-lead {
+    width: 50%;
+    max-width: 50%;
+  }
+  .widget.saved-links div.post-lead:nth-of-type( 2n + 1 ) {
+    clear: left;
+    border-left: none;
+  }
+}
 .workday-related-posts .widgettitle {
   text-align: center;
   font-size: 42px;
