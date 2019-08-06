@@ -504,6 +504,70 @@ h5.top-tag a:hover {
     border-left: none;
   }
 }
+.workday-related-posts .widgettitle {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
+  font-weight: 600;
+}
+.workday-related-posts ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.workday-related-posts ul li {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin-right: 40px;
+}
+.workday-related-posts ul li:last-of-type {
+  margin-right: 0;
+}
+.workday-related-posts ul li .workday-related-post-thumbnail {
+  height: 150px;
+}
+.workday-related-posts ul li .workday-related-post-thumbnail .wp-post-image {
+  width: 100%;
+  height: 100%;
+  max-height: 100%;
+}
+.workday-related-posts ul li h5.top-tag {
+  margin-top: 25px;
+}
+.workday-related-posts ul li h5.top-tag a {
+  font-size: 18px;
+}
+.workday-related-posts ul li h5.top-tag a:hover {
+  text-decoration: none;
+}
+.workday-related-posts ul li h4 {
+  margin-bottom: 10px;
+}
+.workday-related-posts ul li h4 a {
+  color: #020202;
+  font-size: 28px;
+}
+.workday-related-posts ul li h4 a:hover {
+  text-decoration: none;
+}
+@media (max-width: 768px) {
+  .workday-related-posts ul {
+    display: block;
+  }
+  .workday-related-posts ul li {
+    margin-right: 0;
+  }
+  .workday-related-posts ul li .workday-related-post-thumbnail {
+    height: auto;
+  }
+  .workday-related-posts ul li .workday-related-post-thumbnail .wp-post-image {
+    max-height: auto;
+  }
+}
 #site-header {
   margin-top: 0;
   margin-bottom: 0;
