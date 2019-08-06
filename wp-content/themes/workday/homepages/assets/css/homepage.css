@@ -51,6 +51,9 @@
   background-size: cover;
   margin-top: 0!important;
 }
+#topstory.topstory-no-photo {
+  background: rgba(0, 0, 0, 0.62);
+}
 #topstory article {
   max-width: 1170px;
   width: 100%;

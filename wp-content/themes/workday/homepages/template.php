@@ -9,9 +9,14 @@
 	<article <?php post_class( 'clearfix', $topstory ); ?>>
 		<?php
 			if( get_post_thumbnail_id() ) {
-                echo '<div class="topstory-image-wrapper"><img class="topstory-image-container-mobile-image" src="'.wp_get_attachment_url( get_post_thumbnail_id( $topstory->ID ) ).'"></div>';
-			}
-		?>
+			?>
+				<div id="topstory" class="" style="background-image:url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $topstory->ID ) ); ?>');">
+					<article <?php post_class( 'clearfix', $topstory ); ?>>
+						<div class="topstory-image-wrapper"><img class="topstory-image-container-mobile-image" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $topstory->ID ) ); ?>"></div>';
+			<?php } else { ?>
+				<div id="topstory" class="topstory-no-photo">
+					<article <?php post_class( 'clearfix', $topstory ); ?>>
+		<?php } ?>
 		<h2><a href="<?php echo esc_attr( get_permalink( $topstory ) ); ?>">
 			<?php echo get_the_title( $topstory ); ?>
 		</a></h2>
