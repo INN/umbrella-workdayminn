@@ -82,7 +82,10 @@ function largo_header() {
 	
 }
 
-function register_workday_widgets(){
+/**
+ * Register Workday child theme specific widgets
+ */
+function register_workday_widgets() {
 
     $register = array(
         'workday_related_posts_widget' => '/inc/widgets/workday-related-posts.php',
