@@ -190,6 +190,11 @@ h5.top-tag a:hover {
   background-color: #F8F4F2;
   text-decoration: none;
 }
+body.normal.single article > header {
+  clear: both;
+  margin: 24px 17.0213%;
+  position: relative;
+}
 .photo-header-background {
   display: flex;
   justify-content: center;
