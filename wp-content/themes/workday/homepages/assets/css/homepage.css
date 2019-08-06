@@ -38,4 +38,73 @@
   margin-top: 3rem;
   margin-bottom: 1.5rem;
 }
+#topstory {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 600px;
+  height: max-content;
+  margin-left: calc(50% - 50vw) !important;
+  max-width: 100vw;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 0!important;
+}
+#topstory article {
+  max-width: 1170px;
+  width: 100%;
+  border-bottom: none;
+  margin: 0 20px;
+}
+#topstory h2,
+#topstory h5 {
+  max-width: 60%;
+}
+#topstory h2 span,
+#topstory h5 span {
+  color: white;
+}
+#topstory h2 a,
+#topstory h5 a {
+  color: white;
+}
+#topstory h5.byline {
+  font-size: 20px;
+  text-transform: uppercase;
+}
+#topstory a:hover {
+  text-decoration: none;
+}
+#topstory .topstory-image-wrapper {
+  margin-bottom: 60px;
+}
+@media (min-width: 769px) {
+  #topstory .topstory-image-wrapper {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  #topstory {
+    display: block;
+    background-image: none!important;
+  }
+  #topstory article {
+    margin: 0;
+  }
+  #topstory h5 {
+    margin: 0 20px;
+  }
+  #topstory h5 a,
+  #topstory h5 span {
+    color: #CA5004;
+  }
+  #topstory h2 {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  #topstory h2 a {
+    color: #020202;
+  }
+}
 /*# sourceMappingURL=homepages/assets/css/homepage.css.map */

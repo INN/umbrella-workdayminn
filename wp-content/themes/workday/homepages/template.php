@@ -1,22 +1,25 @@
 <?php
 	global $shown_ids;
+
+	$topstory = largo_home_single_top();
+	$shown_ids[] = $topstory->ID;
 ?>
 
-<div id="topstory" class="" style="border: 4px solid black; padding: 3em; min-height: 20em;">
-	<?php
-		$topstory = largo_home_single_top();
-		$shown_ids[] = $topstory->ID;
-		?>
-			<article <?php post_class( 'clearfix', $topstory ); ?>>
-				<?php largo_maybe_top_term( array( 'post' => $topstory->ID ) ); ?>
-				<h2><a href="<?php echo esc_attr( get_permalink( $topstory ) ); ?>">
-					<?php echo get_the_title( $topstory ); ?>
-				</a></h2>
-				<h5 class="byline"><?php largo_byline( true, false, $topstory ); ?></h5>
-				<?php largo_excerpt( $topstory, 4, false ); ?>
-			</article>
+<div id="topstory" class="" style="background-image:url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $topstory->ID ) ); ?>');">
+	<article <?php post_class( 'clearfix', $topstory ); ?>>
 		<?php
-	?>
+			if( get_post_thumbnail_id() ) {
+                echo '<div class="topstory-image-wrapper"><img class="topstory-image-container-mobile-image" src="'.wp_get_attachment_url( get_post_thumbnail_id( $topstory->ID ) ).'"></div>';
+			}
+		?>
+		<h2><a href="<?php echo esc_attr( get_permalink( $topstory ) ); ?>">
+			<?php echo get_the_title( $topstory ); ?>
+		</a></h2>
+		<h5 class="byline"><?php largo_byline( true, true, $topstory ); ?></h5>
+	</article>
+	<div class="topstory-newsletter-widget">
+		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+	</div>
 </div>
 
 <div id="featured" class="row clearfix">
