@@ -22,7 +22,7 @@
 			<div class="topstory-newsletter-widget-container">
 				<div class="topstory-newsletter-widget-content">
 					<label><?php _e( 'Story Alerts', 'largo' ); ?></label>
-					<p><?php _e( 'This is the story alerts subtext', 'largo' ); ?></p>
+					<p><?php _e( 'The best of Workday Minnesota. We’ll email you when we publish a significant investigation (once every two weeks).', 'largo' ); ?></p>
 				</div>
 				<div class="topstory-newsletter-widget-form">
 					<?php get_template_part( 'partials/mailchimp', 'signup-form' ); ?>
