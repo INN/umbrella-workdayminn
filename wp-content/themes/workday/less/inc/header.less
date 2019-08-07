@@ -3,7 +3,7 @@
     margin-bottom: 0;
     .header-container,
     .header_img {
-        height: 120px;
+        height: 130px;
     }
     .header-container {
         background: @black;
@@ -21,13 +21,14 @@
                 flex: 0 0 auto;
                 width: 10%;
                 text-align: center;
+                height: 85px;
                 cursor: pointer;
                 label {
                     color: @white;
                     text-transform: uppercase;
                     margin-bottom: 0;
                     font-weight: 500;
-                    font-family: @font-body;
+                    font-family: @font-headline;
                     &:hover {
                         text-decoration: none;
                         cursor: pointer;
@@ -35,6 +36,7 @@
                 }
                 img {
                     margin: 10px 0;
+                    height: 35px;
                 }
                 a {
                     &:hover {
@@ -51,10 +53,10 @@
                 text-align: center;
             }
             .nav-left {
-                border-right: 2px solid @gray;
+                border-right: 1px solid @darkgray;
             }
             .nav-right {
-                border-left: 2px solid @gray;
+                border-left: 1px solid @darkgray;
             }
         }
     }
@@ -64,7 +66,11 @@
     list-style: none;
     margin-left: 0;
     text-align: center;
-    margin: 15px 0;
+    margin: 0;
+    padding: 0;
+    .navbar-inner {
+        padding: 5px 0;
+    }
     &.navbar {
         border: none;
     }
@@ -79,11 +85,16 @@
             text-transform: uppercase;
             a {
                 color: @black;
-                font-weight: 600;
+                font-weight: 400;
+                font-size: 18px;
                 &:hover {
                     background: none;
                 }
             }
         }
     }
+}
+
+#main {
+    margin-top: 0;
 }

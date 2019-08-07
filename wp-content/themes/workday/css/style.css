@@ -680,7 +680,7 @@ body.normal.single article > header {
 }
 #site-header .header-container,
 #site-header .header_img {
-  height: 120px;
+  height: 130px;
 }
 #site-header .header-container {
   background: #020202;
@@ -700,6 +700,7 @@ body.normal.single article > header {
   flex: 0 0 auto;
   width: 10%;
   text-align: center;
+  height: 85px;
   cursor: pointer;
 }
 #site-header .header-container .header-container-inner .nav-left label,
@@ -708,7 +709,7 @@ body.normal.single article > header {
   text-transform: uppercase;
   margin-bottom: 0;
   font-weight: 500;
-  font-family: "classico-urw", "Avenir Next", Arial, sans-serif;
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
 }
 #site-header .header-container .header-container-inner .nav-left label:hover,
 #site-header .header-container .header-container-inner .nav-right label:hover {
@@ -718,6 +719,7 @@ body.normal.single article > header {
 #site-header .header-container .header-container-inner .nav-left img,
 #site-header .header-container .header-container-inner .nav-right img {
   margin: 10px 0;
+  height: 35px;
 }
 #site-header .header-container .header-container-inner .nav-left a:hover,
 #site-header .header-container .header-container-inner .nav-right a:hover {
@@ -735,16 +737,20 @@ body.normal.single article > header {
   text-align: center;
 }
 #site-header .header-container .header-container-inner .nav-left {
-  border-right: 2px solid #ADADAD;
+  border-right: 1px solid #534B47;
 }
 #site-header .header-container .header-container-inner .nav-right {
-  border-left: 2px solid #ADADAD;
+  border-left: 1px solid #534B47;
 }
 #main-nav {
   list-style: none;
   margin-left: 0;
   text-align: center;
-  margin: 15px 0;
+  margin: 0;
+  padding: 0;
+}
+#main-nav .navbar-inner {
+  padding: 5px 0;
 }
 #main-nav.navbar {
   border: none;
@@ -762,10 +768,14 @@ body.normal.single article > header {
 }
 #main-nav .nav li a {
   color: #020202;
-  font-weight: 600;
+  font-weight: 400;
+  font-size: 18px;
 }
 #main-nav .nav li a:hover {
   background: none;
+}
+#main {
+  margin-top: 0;
 }
 .footer-bg {
   background: #020202;
