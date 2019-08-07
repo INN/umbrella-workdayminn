@@ -383,6 +383,107 @@ body.normal.single article > header {
 .photo-header-background .featured-image-container-content .photo-header-social-links .largo-follow.post-social .hidden-phone {
   display: none;
 }
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container {
+  display: flex;
+  align-items: center;
+  background: #020202;
+}
+@media (max-width: 768px) {
+  .single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .column {
+  flex: 1;
+  max-height: 400px;
+}
+@media (max-width: 768px) {
+  .single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .column {
+    flex: auto;
+    width: 100%;
+    position: relative;
+  }
+  .single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .column.single-post-newsletter-signup-widget-signup-section {
+    order: 2;
+  }
+  .single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .column.single-post-newsletter-signup-widget-image-section {
+    order: 1;
+  }
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section {
+  color: white;
+  padding: 40px;
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section p {
+  color: #ADADAD;
+  font-size: 16px;
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .mc-field-group,
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .clear {
+  display: inline-block;
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .mce-responses {
+  display: none;
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .mc-field-group {
+  width: 75%;
+}
+@media (max-width: 768px) {
+  .single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .mc-field-group {
+    width: 100%;
+  }
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .email {
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  border-color: #CA5004;
+  text-indent: 20px;
+  background: transparent;
+  color: white;
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .email::placeholder {
+  color: white;
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .mce_inline_error[for="mce-EMAIL"] {
+  max-width: 95.5%;
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup #mc-embedded-subscribe {
+  height: 50px;
+  margin-left: -2px;
+  background: #CA5004;
+  border-color: #CA5004;
+  color: white;
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 100%;
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .clear {
+  width: 20%;
+  margin-left: 0px;
+  vertical-align: top;
+}
+@media (max-width: 768px) {
+  .single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .clear {
+    width: 100%;
+  }
+  .single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .clear #mc-embedded-subscribe {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-signup-section #mc_embed_signup .clear#mce-responses {
+  width: auto;
+  margin-left: 0;
+}
+.single-post-newsletter-signup-widget .single-post-newsletter-signup-widget-container .single-post-newsletter-signup-widget-image-section img {
+  max-height: inherit;
+  height: 100%;
+}
 .largo-recent-posts {
   padding-bottom: 1.5rem;
 }
