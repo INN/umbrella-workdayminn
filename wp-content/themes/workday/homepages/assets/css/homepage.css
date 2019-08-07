@@ -40,8 +40,9 @@
 }
 #topstory {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   min-height: 600px;
   height: max-content;
   margin-left: calc(50% - 50vw) !important;
@@ -50,6 +51,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 0!important;
+  position: relative;
 }
 #topstory.topstory-no-photo {
   background: rgba(0, 0, 0, 0.62);
@@ -108,6 +110,128 @@
   }
   #topstory h2 a {
     color: #020202;
+  }
+}
+#topstory .topstory-newsletter-widget {
+  max-width: 1170px;
+  width: 100%;
+  background: white;
+  margin-top: auto;
+}
+#topstory .topstory-newsletter-widget .topstory-newsletter-widget-container {
+  margin: 25px 25px 0;
+  border-bottom: 1px solid #DDD2CC;
+  display: flex;
+  align-items: center;
+}
+#topstory .topstory-newsletter-widget .topstory-newsletter-widget-content {
+  width: 40%;
+  display: inline-block;
+}
+#topstory .topstory-newsletter-widget .topstory-newsletter-widget-content label {
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
+  font-size: 24px;
+}
+#topstory .topstory-newsletter-widget .topstory-newsletter-widget-content p {
+  font-size: 16px;
+}
+#topstory .topstory-newsletter-widget .topstory-newsletter-widget-form {
+  width: 52%;
+  display: inline-block;
+}
+#topstory .topstory-newsletter-widget .topstory-newsletter-rss-feed {
+  display: inline-block;
+  padding-left: 30px;
+  border-left: 1px solid #DDD2CC;
+}
+#topstory .topstory-newsletter-widget .topstory-newsletter-rss-feed a {
+  font-size: 36px;
+  color: #16A327;
+}
+#topstory .topstory-newsletter-widget #mc_embed_signup #mc_embed_signup_scroll {
+  display: flex;
+}
+#topstory .topstory-newsletter-widget #mc_embed_signup .mc-field-group,
+#topstory .topstory-newsletter-widget #mc_embed_signup .clear {
+  display: inline-block;
+}
+#topstory .topstory-newsletter-widget #mc_embed_signup .mce-responses {
+  display: none;
+}
+#topstory .topstory-newsletter-widget #mc_embed_signup .mc-field-group {
+  width: 75%;
+}
+#topstory .topstory-newsletter-widget #mc_embed_signup .email {
+  height: 48px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  border-color: #CA5004;
+  text-indent: 20px;
+}
+#topstory .topstory-newsletter-widget #mc_embed_signup .mce_inline_error[for="mce-EMAIL"] {
+  max-width: 93.5%;
+}
+#topstory .topstory-newsletter-widget #mc_embed_signup #mc-embedded-subscribe {
+  height: 50px;
+  margin-left: 0px;
+  background: #CA5004;
+  border-color: #CA5004;
+  color: white;
+  font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px;
+  width: 100%;
+}
+#topstory .topstory-newsletter-widget #mc_embed_signup .clear {
+  width: 20%;
+  margin-left: 0px;
+}
+#topstory .topstory-newsletter-widget #mc_embed_signup .clear#mce-responses {
+  width: auto;
+  margin-left: 0;
+}
+@media (max-width: 768px) {
+  #topstory .topstory-newsletter-widget {
+    display: block;
+  }
+  #topstory .topstory-newsletter-widget .topstory-newsletter-widget-container {
+    display: block;
+    border-bottom: none;
+    border-top: 1px solid #DDD2CC;
+    margin-top: 20px;
+    padding-top: 20px;
+  }
+  #topstory .topstory-newsletter-widget .topstory-newsletter-widget-content,
+  #topstory .topstory-newsletter-widget .topstory-newsletter-widget-form,
+  #topstory .topstory-newsletter-widget .topstory-newsletter-rss-feed {
+    width: 100%;
+    display: block;
+  }
+  #topstory .topstory-newsletter-widget .topstory-newsletter-rss-feed {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-left: none;
+    border-top: 1px solid #DDD2CC;
+    padding-left: 0;
+    text-align: center;
+  }
+  #topstory .topstory-newsletter-widget #mc_embed_signup .mc-field-group {
+    width: 70%;
+  }
+  #topstory .topstory-newsletter-widget #mc_embed_signup .clear {
+    width: 30%;
+    margin-left: 0px;
+  }
+  #topstory .topstory-newsletter-widget #mc_embed_signup .clear #mc-embedded-subscribe {
+    margin-left: 0;
+    width: 100%;
+  }
+  #topstory .topstory-newsletter-widget #mc_embed_signup #mce-responses {
+    width: auto;
+    margin-left: 0;
   }
 }
 /*# sourceMappingURL=homepages/assets/css/homepage.css.map */

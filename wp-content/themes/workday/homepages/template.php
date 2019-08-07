@@ -8,7 +8,7 @@
 <?php if( get_post_thumbnail_id( $topstory->ID ) ) { ?>
 	<div id="topstory" class="" style="background-image:url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $topstory->ID ) ); ?>');">
 		<article <?php post_class( 'clearfix', $topstory ); ?>>
-			<div class="topstory-image-wrapper"><img class="topstory-image-container-mobile-image" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $topstory->ID ) ); ?>"></div>';
+			<div class="topstory-image-wrapper"><img class="topstory-image-container-mobile-image" src="<?php echo wp_get_attachment_url( get_post_thumbnail_id( $topstory->ID ) ); ?>"></div>
 <?php } else { ?>
 	<div id="topstory" class="topstory-no-photo">
 		<article <?php post_class( 'clearfix', $topstory ); ?>>
@@ -19,7 +19,18 @@
 			<h5 class="byline"><?php largo_byline( true, true, $topstory ); ?></h5>
 		</article>
 		<div class="topstory-newsletter-widget">
-			<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+			<div class="topstory-newsletter-widget-container">
+				<div class="topstory-newsletter-widget-content">
+					<label><?php _e( 'Story Alerts', 'largo' ); ?></label>
+					<p><?php _e( 'This is the story alerts subtext', 'largo' ); ?></p>
+				</div>
+				<div class="topstory-newsletter-widget-form">
+					<?php get_template_part( 'partials/mailchimp', 'signup-form' ); ?>
+				</div>
+				<div class="topstory-newsletter-rss-feed">
+					<a href="<?php echo of_get_option( 'rss_link' ) ? esc_url( of_get_option( 'rss_link' ) ) : get_feed_link(); ?>"><i class="icon-rss"></i></a>
+				</div>
+			</div>
 		</div>
 	</div>
 
