@@ -187,3 +187,106 @@ body.normal.single article>header {
     }
   }
 }
+
+.single-post-newsletter-signup-widget {
+  .single-post-newsletter-signup-widget-container {
+    display: flex;
+    align-items: center;
+    background: @black;
+    @media (max-width: 768px) {
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .column {
+      flex: 1;
+      max-height: 400px;
+      @media (max-width: 768px) {
+        flex: auto;
+        width: 100%;
+        position: relative;
+        &.single-post-newsletter-signup-widget-signup-section {
+          order: 2;
+        }
+        &.single-post-newsletter-signup-widget-image-section {
+          order: 1;
+        }
+      }
+    }
+    .single-post-newsletter-signup-widget-signup-section {
+      color: @white;
+      padding: 40px;
+      p {
+        color: @gray;
+        font-size: 16px;
+      }
+      #mc_embed_signup {
+        .mc-field-group,
+        .clear {
+          display: inline-block;
+        }
+        .mce-responses {
+          display: none;
+        }
+        .mc-field-group {
+          width: 75%;
+          @media (max-width: 768px) {
+            width: 100%;
+          }
+        }
+        .email {
+          height: 48px;
+          padding: 0;
+          margin: 0;
+          width: 100%;
+          max-width: 100%;
+          border-color: @orange;
+          text-indent: 20px;
+          background: transparent;
+          color: @white;
+          &::placeholder {
+            color: @white;
+          }
+        }
+        .mce_inline_error {
+          &[for="mce-EMAIL"] {
+            max-width: 95.5%;
+          }
+        }
+        #mc-embedded-subscribe {
+          height: 50px;
+          margin-left: -2px;
+          background: @orange;
+          border-color: @orange;
+          color: @white;
+          font-family: @font-headline;
+          text-transform: uppercase;
+          font-size: 14px;
+          width: 100%;
+        }
+        .clear {
+          width: 20%;
+          margin-left: 0px;
+          vertical-align: top;
+          @media (max-width: 768px) {
+            width: 100%;
+            #mc-embedded-subscribe {
+              margin-left: 0;
+              margin-top: 20px;
+            }
+          }
+          &#mce-responses {
+            width: auto;
+            margin-left: 0;
+          }
+        }
+      }
+      
+    }
+    .single-post-newsletter-signup-widget-image-section {
+      img {
+        max-height: inherit;
+        height: 100%;
+      }
+    }
+  }
+}
