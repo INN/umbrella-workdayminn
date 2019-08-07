@@ -82,7 +82,7 @@
   text-decoration: none;
 }
 #topstory .topstory-image-wrapper {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 @media (min-width: 769px) {
   #topstory .topstory-image-wrapper {
@@ -99,6 +99,7 @@
   }
   #topstory h5 {
     margin: 0 20px;
+    max-width: 75%;
   }
   #topstory h5 a,
   #topstory h5 span {
@@ -107,6 +108,8 @@
   #topstory h2 {
     margin-left: 20px;
     margin-right: 20px;
+    font-size: 32px;
+    max-width: 75%;
   }
   #topstory h2 a {
     color: #020202;
