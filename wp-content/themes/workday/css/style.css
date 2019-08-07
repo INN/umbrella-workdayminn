@@ -691,7 +691,7 @@ body.normal.single article > header {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1170px;
+  max-width: 100%;
   height: inherit;
   margin: 0 auto;
 }
