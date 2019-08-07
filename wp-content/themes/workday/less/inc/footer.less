@@ -1,6 +1,30 @@
 .footer-bg {
     background: @black;
     #site-footer {
+        #supplementary {
+            .widget {
+                padding-left: 0!important;
+                padding-right: 0!important;
+            }
+            .owl-stage {
+                width: 100%!important;
+                .owl-item {
+                    width: 25%!important;
+                    margin-right: 0!important;
+                    .item {
+                        img {
+                            border: none;
+                            max-width: 80%;
+                            margin: 0 auto;
+                        }
+                    }
+                    @media (max-width: 768px) {
+                        margin: 20px 0!important;
+                        width: 100%!important;
+                    }
+                }
+            }
+        }
         #boilerplate {
             padding-top: 50px;
             padding-bottom: 15px;

@@ -669,6 +669,28 @@ body.normal.single article > header {
 .footer-bg {
   background: #020202;
 }
+.footer-bg #site-footer #supplementary .widget {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+.footer-bg #site-footer #supplementary .owl-stage {
+  width: 100%!important;
+}
+.footer-bg #site-footer #supplementary .owl-stage .owl-item {
+  width: 25%!important;
+  margin-right: 0!important;
+}
+.footer-bg #site-footer #supplementary .owl-stage .owl-item .item img {
+  border: none;
+  max-width: 80%;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .footer-bg #site-footer #supplementary .owl-stage .owl-item {
+    margin: 20px 0!important;
+    width: 100%!important;
+  }
+}
 .footer-bg #site-footer #boilerplate {
   padding-top: 50px;
   padding-bottom: 15px;
