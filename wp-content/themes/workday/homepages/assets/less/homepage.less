@@ -64,6 +64,10 @@
   position: relative;
   &.topstory-no-photo {
     background: rgba(0, 0, 0, 0.62);
+    @media (max-width: 768px) {
+      min-height: auto;
+      background: none;
+    }
   }
   article {
     max-width: 1170px;

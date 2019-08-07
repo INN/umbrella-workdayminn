@@ -56,6 +56,12 @@
 #topstory.topstory-no-photo {
   background: rgba(0, 0, 0, 0.62);
 }
+@media (max-width: 768px) {
+  #topstory.topstory-no-photo {
+    min-height: auto;
+    background: none;
+  }
+}
 #topstory article {
   max-width: 1170px;
   width: 100%;
