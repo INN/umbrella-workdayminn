@@ -28,7 +28,7 @@
 					<?php get_template_part( 'partials/mailchimp', 'signup-form' ); ?>
 				</div>
 				<div class="topstory-newsletter-rss-feed">
-					<a href="<?php echo of_get_option( 'rss_link' ) ? esc_url( of_get_option( 'rss_link' ) ) : get_feed_link(); ?>"><i class="icon-rss"></i></a>
+					<a href="<?php echo of_get_option( 'rss_link' ) ? esc_url( of_get_option( 'rss_link' ) ) : get_feed_link(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rss.png"></a>
 				</div>
 			</div>
 		</div>
