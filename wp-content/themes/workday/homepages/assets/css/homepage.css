@@ -87,6 +87,7 @@
   padding-right: 0;
   font-size: 28px;
   font-weight: 500;
+  margin-bottom: 10px;
 }
 #widget-area .largo-recent-posts ul li h5:first-of-type {
   margin-top: 25px;
@@ -113,7 +114,6 @@
 #widget-area .largo-recent-posts ul li p {
   padding-left: 0;
   padding-right: 0;
-  margin-top: 10px;
   color: #534B47;
 }
 @media (max-width: 768px) {
