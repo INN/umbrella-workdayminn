@@ -53,6 +53,10 @@
   width: 100vw;
   margin-left: calc(50% - 50vw);
   padding: 0;
+  .widgettitle {
+    margin-bottom: 3rem;
+    font-size: 42px;
+  }
   ul {
     display: flex;
     flex-direction: row;
@@ -82,10 +86,12 @@
         padding-left: 0;
         padding-right: 0;
         font-size: 28px;
+        font-weight: 500;
         &:first-of-type {
           margin-top: 25px;
         }
         &.top-tag {
+          font-weight: 400;
           a {
           font-size: 18px;
           &:hover {
@@ -107,6 +113,8 @@
       p {
         padding-left: 0;
         padding-right: 0;
+        margin-top: 10px;
+        color: @darkgray;
       }
     }
     @media (max-width: 768px) {
