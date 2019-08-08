@@ -806,6 +806,9 @@ body.normal.single article > header {
   padding-right: 20px;
   text-transform: uppercase;
 }
+#sticky-nav.navbar li.home-icon img {
+  height: 45px;
+}
 .footer-bg {
   background: #020202;
 }
