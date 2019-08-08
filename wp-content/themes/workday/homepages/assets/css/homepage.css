@@ -1,8 +1,10 @@
 #featured {
   margin-top: 4em;
+  margin-bottom: 4em;
 }
 #substory article {
   margin-bottom: 1.5rem;
+  border-bottom: none;
 }
 #substory article img {
   margin-bottom: 1.5rem;
@@ -16,6 +18,10 @@
 }
 #substory article h2 a {
   color: #020202;
+}
+#substory article p {
+  color: #534B47;
+  font-size: 18px;
 }
 #homepage-sidebar .widget {
   background-color: #F8F4F2;
