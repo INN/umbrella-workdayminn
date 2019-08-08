@@ -53,10 +53,12 @@
 
 	<section class="entry-content clearfix" itemprop="articleBody">
 		
-		<?php largo_entry_content( $post ); ?>
+        <?php largo_entry_content( $post ); ?>
+        
+        <div class="end-byline"><?php largo_byline( true, false, get_the_ID() ); ?></div>
 		
 	</section>
 
-	<?php do_action('largo_after_post_content'); ?>
+    <?php do_action('largo_after_post_content'); ?>
 
 </article>
