@@ -17,11 +17,24 @@
   }
   h5.top-tag {
     margin-top: @whitespace;
+    a {
+      font-size: 18px;
+      font-weight: 400;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
   h5 {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 20px;
     a {
       color: @black;
     }
+  }
+  p {
+    color: @darkgray;
   }
 
   // Stuff for the "more" button
@@ -32,10 +45,19 @@
     text-transform: uppercase;
     vertical-align: middle;
     line-height: @circlesize;
+    border-bottom: 1px solid @gray;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 30px;
     a {
       display: table-cell;
       vertical-align: middle;
       color: @black;
+      &:hover {
+        text-decoration: none;
+      }
     }
     &:hover {
       .encircle {
@@ -51,6 +73,7 @@
       box-sizing: border-box;
     }
     padding-left: 0.2em;
+    padding-top: 1px;
     display: inline-block;
     vertical-align: middle;
     height: @circlesize;
@@ -72,6 +95,8 @@
     border: 1px solid @orange;
     text-transform: uppercase;
     color: @black;
+    margin-top: 30px;
+    margin-bottom: 5px;
     a {
       color: @black;
     }
@@ -191,6 +216,9 @@
             text-decoration: none;
           }
         }
+      }
+      p {
+        color: @darkgray;
       }
     }
     @media (max-width: 768px) {
