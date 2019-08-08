@@ -182,6 +182,10 @@ h5.top-tag a {
 h5.top-tag a:hover {
   color: #CA5004;
 }
+.entry-content {
+  margin-top: 5rem;
+  color: #534B47;
+}
 .entry-content a {
   text-decoration: underline;
 }
@@ -686,6 +690,9 @@ body.normal.single article > header {
 }
 .workday-related-posts ul li h4 a:hover {
   text-decoration: none;
+}
+.workday-related-posts ul li p {
+  color: #534B47;
 }
 @media (max-width: 768px) {
   .workday-related-posts ul {
