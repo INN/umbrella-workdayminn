@@ -828,11 +828,7 @@ body.normal.single article > header {
   padding-left: 0!important;
   padding-right: 0!important;
 }
-.footer-bg #site-footer #supplementary .owl-stage {
-  width: 100%!important;
-}
 .footer-bg #site-footer #supplementary .owl-stage .owl-item {
-  width: 25%!important;
   margin-right: 0!important;
 }
 .footer-bg #site-footer #supplementary .owl-stage .owl-item .item img {
