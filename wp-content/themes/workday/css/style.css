@@ -767,6 +767,11 @@ body.normal.single article > header {
 #main-nav .nav li a:hover {
   background: none;
 }
+#sticky-nav.navbar li:not(.home-icon) a {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-transform: uppercase;
+}
 .footer-bg {
   background: #020202;
 }
