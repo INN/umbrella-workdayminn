@@ -87,3 +87,22 @@
         }
     }
 }
+
+#sticky-nav {
+    &.navbar {
+        li {
+            &:not(.home-icon) {
+                a {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                    text-transform: uppercase;
+                }
+            }
+            &.home-icon {
+                img {
+                    height: 45px;
+                }
+            }
+        }
+    }
+}
