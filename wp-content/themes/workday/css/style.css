@@ -712,9 +712,11 @@ body.normal.single article > header {
   margin-top: 0;
   margin-bottom: 0;
 }
-#site-header .header-container,
+#site-header .header-container {
+  height: 185px;
+}
 #site-header .header_img {
-  height: 135px;
+  height: 120px;
 }
 #site-header .header-container {
   background: #020202;
