@@ -108,6 +108,7 @@ add_action( 'widgets_init', 'register_workday_widgets', 1 );
  */
 function workday_get_post_categories_with_top_term( $post_id ) {
 
+    // grab top term of post but don't link or echo it
     $top_term = largo_top_term( $args = 
         array(
             'post' => $post_id,
@@ -118,18 +119,24 @@ function workday_get_post_categories_with_top_term( $post_id ) {
 
     $formatted_categories = array();
 
+    // get all categories of the post
     $category_list = get_the_category( $post_id );
 
+    // if our top term exists, let's move it to the front of our array
     if( !empty ( $top_term ) ) {
 
+        // loop through to find top term in our categories array
         foreach( $category_list as $index => $category ) {
 
             if( $category->name == strip_tags( $top_term ) ){
 
+                // our top term obj
                 $top_term_index = $category_list[$index];
 
+                // remove our top term obj
                 unset( $category_list[$index] );
 
+                // add our top term obj as the first item in the category array
                 array_unshift( $category_list, $top_term_index );
 
             }
@@ -138,6 +145,7 @@ function workday_get_post_categories_with_top_term( $post_id ) {
 
     }
 
+    // loop through each category and give it a link and formatting
     foreach( $category_list as $category ) {
 
         $category_link = get_category_link( $category->term_id );
