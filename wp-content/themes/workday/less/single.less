@@ -70,6 +70,7 @@ body.normal.single article>header {
     .top-categories {
       text-align: center;
       h5.top-tag {
+        color: @mint-green;
         display: inline;
         position: relative!important;
         text-align: center;
@@ -86,13 +87,12 @@ body.normal.single article>header {
             text-decoration: none;
           }
         }
-        span {
+
+        & + h5.top-tag::before {
+          display: inline;
+          content: ' | ';
+          white-space: pre;
           color: @gray;
-        }
-        &:last-of-type {
-          span {
-            display: none;
-          }
         }
       }
     }
