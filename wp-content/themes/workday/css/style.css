@@ -277,7 +277,7 @@ body.normal.single article > header {
   font-family: "bureau-grot-condensed", "PT Sans Narrow Bold", "Oswald", sans-serif;
 }
 .photo-header-background .featured-image-container-content .top-categories h5.top-tag a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 .photo-header-background .featured-image-container-content .top-categories h5.top-tag + h5.top-tag::before {
   display: inline;
