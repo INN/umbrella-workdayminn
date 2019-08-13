@@ -113,14 +113,15 @@ function workday_get_post_categories_with_top_term( $post_id ) {
         array(
             'post' => $post_id,
             'echo' => FALSE,
-            'link' => FALSE,
+            'link' => true,
         )
-    ); 
+    );
 
     $formatted_categories = array();
 
-    // get all categories of the post
-    $category_list = get_the_category( $post_id );
+	// get all categories of the post
+	$category_list = get_the_category( $post_id );
+	$categories_rearranged = false;
 
     // if our top term exists, let's move it to the front of our array
     if( !empty ( $top_term ) ) {
@@ -139,20 +140,27 @@ function workday_get_post_categories_with_top_term( $post_id ) {
                 // add our top term obj as the first item in the category array
                 array_unshift( $category_list, $top_term_index );
 
+				$categories_rearranged = true;
+
             }
 
         }
 
     }
 
+
     // loop through each category and give it a link and formatting
     foreach( $category_list as $category ) {
 
         $category_link = get_category_link( $category->term_id );
 
-        array_push( $formatted_categories, '<h5 class="top-tag"><a href="'.$category_link.'" title="Read posts in the '.$category->name.' category">'.$category->name.'</a><span> | </span></h5>');
+        array_push( $formatted_categories, '<h5 class="top-tag"><a href="'.$category_link.'" title="Read posts in the '.$category->name.' category">'.$category->name.'</a></h5>');
 
     }
+
+	if ( true !== $categories_rearranged ) {
+		array_unshift( $formatted_categories, '<h5 class="top-tag">' . $top_term . '</h5>');
+	}
 
     return $formatted_categories;
 
