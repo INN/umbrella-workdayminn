@@ -488,14 +488,23 @@ body.normal.single article > header {
   max-height: inherit;
   height: 100%;
 }
-.archive .primary-featured-post h5.top-tag a {
-  color: #ADADAD;
-}
 .archive .secondary-featured-post h5.top-tag {
   margin-top: 10px;
 }
-.archive .secondary-featured-post h5.top-tag a {
+.archive h5.top-tag a {
   color: #ADADAD;
+  text-decoration: none;
+}
+.archive h5.top-tag a:hover {
+  text-decoration: underline;
+  background: none;
+}
+.archive h2.entry-title a {
+  text-decoration: none;
+}
+.archive h2.entry-title a:hover {
+  text-decoration: underline;
+  background: none;
 }
 .largo-recent-posts {
   padding-bottom: 1.5rem;
