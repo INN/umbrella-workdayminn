@@ -67,20 +67,32 @@ body.normal.single article>header {
         display: none;
       }
     }
-    h5.top-tag {
-      position: relative!important;
+    .top-categories {
       text-align: center;
-      margin-bottom: 0;
-      width: 90%;
-      margin: 0 auto;
-      @media (max-width: 768px) {
-        text-align: left;
-      }
-      a {
-        color: @mint-green;
-        font-family: @font-headline;
-        &:hover {
-          text-decoration: none;
+      h5.top-tag {
+        display: inline;
+        position: relative!important;
+        text-align: center;
+        margin-bottom: 0;
+        width: 90%;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+          text-align: left;
+        }
+        a {
+          color: @mint-green;
+          font-family: @font-headline;
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        span {
+          color: @gray;
+        }
+        &:last-of-type {
+          span {
+            display: none;
+          }
         }
       }
     }

@@ -98,3 +98,54 @@ function register_workday_widgets() {
 
 }
 add_action( 'widgets_init', 'register_workday_widgets', 1 );
+
+/**
+ * Function that allows you to get all of the categories for a specific post
+ * with the top term returned as the first item in the array
+ * 
+ * @param int $post_id The ID of the post to get categories of
+ * @return Array of the categories for the specified post
+ */
+function workday_get_post_categories_with_top_term( $post_id ) {
+
+    $top_term = largo_top_term( $args = 
+        array(
+            'post' => $post_id,
+            'echo' => FALSE,
+            'link' => FALSE,
+        )
+    ); 
+
+    $formatted_categories = array();
+
+    $category_list = get_the_category( $post_id );
+
+    if( !empty ( $top_term ) ) {
+
+        foreach( $category_list as $index => $category ) {
+
+            if( $category->name == strip_tags( $top_term ) ){
+
+                $top_term_index = $category_list[$index];
+
+                unset( $category_list[$index] );
+
+                array_unshift( $category_list, $top_term_index );
+
+            }
+
+        }
+
+    }
+
+    foreach( $category_list as $category ) {
+
+        $category_link = get_category_link( $category->term_id );
+
+        array_push( $formatted_categories, '<h5 class="top-tag"><a href="'.$category_link.'" title="Read posts in the '.$category->name.' category">'.$category->name.'</a><span> | </span></h5>');
+
+    }
+
+    return $formatted_categories;
+
+}
