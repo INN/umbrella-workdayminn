@@ -158,7 +158,7 @@ function workday_get_post_categories_with_top_term( $post_id ) {
 
     }
 
-	if ( true !== $categories_rearranged ) {
+	if ( true !== $categories_rearranged && ! empty ( $top_term ) ) {
 		array_unshift( $formatted_categories, '<h5 class="top-tag">' . $top_term . '</h5>');
 	}
 
