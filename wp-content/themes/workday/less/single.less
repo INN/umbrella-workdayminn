@@ -9,6 +9,38 @@
       text-decoration: none;
     }
   }
+  .end-byline {
+    font-style: italic;
+    color: @darkgray;
+    font-size: 15px;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .by-author {
+      .author {
+        a {
+          color: @darkgray;
+          text-decoration: none;
+          &:hover {
+            background: none;
+          }
+        }
+      }
+    }
+    .sep {
+      flex: 0.90 0 0;
+      background: @darkgray;
+      font-size: 0;
+      height: 1px;
+    }
+    .entry-date {
+      float: right;
+    }
+    .edit-link {
+      display: block;
+    }
+  }
 }
 
 // we need to match all post types, 
@@ -67,20 +99,32 @@ body.normal.single article>header {
         display: none;
       }
     }
-    h5.top-tag {
-      position: relative!important;
+    .top-categories {
       text-align: center;
-      margin-bottom: 0;
-      width: 90%;
-      margin: 0 auto;
-      @media (max-width: 768px) {
-        text-align: left;
-      }
-      a {
+      h5.top-tag {
         color: @mint-green;
-        font-family: @font-headline;
-        &:hover {
-          text-decoration: none;
+        display: inline;
+        position: relative!important;
+        text-align: center;
+        margin-bottom: 0;
+        width: 90%;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+          text-align: left;
+        }
+        a {
+          color: @mint-green;
+          font-family: @font-headline;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        & + h5.top-tag::before {
+          display: inline;
+          content: ' | ';
+          white-space: pre;
+          color: @gray;
         }
       }
     }
