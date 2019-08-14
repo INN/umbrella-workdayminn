@@ -194,6 +194,34 @@ h5.top-tag a:hover {
   background-color: #F8F4F2;
   text-decoration: none;
 }
+.entry-content .end-byline {
+  font-style: italic;
+  color: #534B47;
+  font-size: 15px;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.entry-content .end-byline .by-author .author a {
+  color: #534B47;
+  text-decoration: none;
+}
+.entry-content .end-byline .by-author .author a:hover {
+  background: none;
+}
+.entry-content .end-byline .sep {
+  flex: 0.9 0 0;
+  background: #534B47;
+  font-size: 0;
+  height: 1px;
+}
+.entry-content .end-byline .entry-date {
+  float: right;
+}
+.entry-content .end-byline .edit-link {
+  display: block;
+}
 body.normal.single article > header {
   clear: both;
   margin: 24px 17.0213%;
@@ -830,7 +858,7 @@ body.normal.single article > header {
   height: 45px;
 }
 #sticky-nav.navbar.sticky-navbar .nav-right #header-extras .donate a span {
-  background-color: #CA5004;
+  background-color: #16A327;
 }
 #main {
   margin-top: 0;

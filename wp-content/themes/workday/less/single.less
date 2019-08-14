@@ -9,6 +9,38 @@
       text-decoration: none;
     }
   }
+  .end-byline {
+    font-style: italic;
+    color: @darkgray;
+    font-size: 15px;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .by-author {
+      .author {
+        a {
+          color: @darkgray;
+          text-decoration: none;
+          &:hover {
+            background: none;
+          }
+        }
+      }
+    }
+    .sep {
+      flex: 0.90 0 0;
+      background: @darkgray;
+      font-size: 0;
+      height: 1px;
+    }
+    .entry-date {
+      float: right;
+    }
+    .edit-link {
+      display: block;
+    }
+  }
 }
 
 // we need to match all post types, 
