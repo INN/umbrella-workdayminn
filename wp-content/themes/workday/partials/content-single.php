@@ -28,7 +28,19 @@
             }
 
             ?>
-            <?php largo_maybe_top_term(); ?>
+            <?php
+                
+                $categories = workday_get_post_categories_with_top_term( get_the_ID() );
+
+                echo '<div class="top-categories">';
+                    foreach( $categories as $index => $category ){
+
+                        echo $category;
+
+                    }
+                echo '</div>';
+                
+            ?>
             <h1 class="entry-title" itemprop="headline"><?php the_title(); ?></h1>
             <h5 class="byline"><?php largo_byline( true, true, get_the_ID() ); ?></h5>
 
