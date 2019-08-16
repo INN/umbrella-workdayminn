@@ -545,6 +545,10 @@ body.normal.single article > header {
   text-decoration: underline;
   background: none;
 }
+#homepage-sidebar .largo-recent-posts .mediaplay {
+  border-bottom: 1px solid #ADADAD;
+  margin-left: 1.5rem;
+}
 .largo-recent-posts {
   padding-bottom: 1.5rem;
 }
@@ -590,8 +594,6 @@ body.normal.single article > header {
   text-transform: uppercase;
   vertical-align: middle;
   line-height: 1.75em;
-  border-bottom: 1px solid #ADADAD;
-  margin-left: 1.5rem;
   margin-right: 1.5rem;
   padding-left: 0;
   padding-right: 0;
